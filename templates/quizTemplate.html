@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <style>
+      body {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <form action="/submit" method="POST">
+      <h2>Question : What is your name?</h2>
+      <input type="text" name="name" required>
+
+      <h2>Question 1: Hangi hayvan suda yaşar?</h2>
+      <input type="radio" name="animal" value="balik" /> Balık<br />
+      <input type="radio" name="animal" value="kopek" /> Köpek<br />
+      <input type="radio" name="animal" value="aslan" /> Aslan<br />
+
+      <h2>Question 2: hangisi mavidir?</h2>
+      <input type="radio" name="color" value="gokyuzu" /> Gökyüzü<br />
+      <input type="radio" name="color" value="agac" /> Ağaç<br />
+      <input type="radio" name="color" value="kedi" /> Kedi<br />
+
+      <h2>Question 3: Hangi hayvan uçabilir?</h2>
+      <textarea name="animals" rows="4" cols="50" ></textarea>
+
+      <br />
+      <input type="submit" value="Gönder" />
+
+    
+      <div style="position: absolute; top: 10px; right: 10px">
+        <p>Best Score: 100%</p>
+      </div>
+    </form>
+
+    
+    <footer>Fatma ATİLAY</footer>
+  </body>
+</html>
